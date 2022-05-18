@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
 
-import com.testvagrants.constants.ProjectConstants;
+import com.testvagrants.constants.FrameworkConstants;
 import com.testvagrants.enums.ConfigProperty;
 
 public class PropertyReader {
@@ -20,7 +20,7 @@ public class PropertyReader {
 
 	static {
 
-		try (FileInputStream fis = new FileInputStream(ProjectConstants.getConfigPropertiesFilePath())) {
+		try (FileInputStream fis = new FileInputStream(FrameworkConstants.getConfigPropertiesFilePath())) {
 
 			properties.load(fis);
 
