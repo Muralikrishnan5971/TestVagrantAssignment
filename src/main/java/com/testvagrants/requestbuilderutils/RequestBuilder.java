@@ -1,6 +1,6 @@
 package com.testvagrants.requestbuilderutils;
 
-import static io.restassured.RestAssured.given;
+import static io.restassured.RestAssured.*;
 
 import com.testvagrants.enums.ConfigProperty;
 import com.testvagrants.projectutils.PropertyReader;

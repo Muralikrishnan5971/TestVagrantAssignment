@@ -1,20 +1,18 @@
-package com.testvagrants.tests;
+package com.testvagrants.factory;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.assertj.core.api.Assertions.*;
-import org.testng.annotations.Test;
-
 import com.testvagrants.pojos.Player;
 import com.testvagrants.pojos.TeamRcb;
 
-public class ValidateJsonBody {
+public final class TeamFactory {
+
+	private TeamFactory() {
+		
+	}
 	
-	
-	
-	@Test
-	public void validateTeamOnlyHasFourForeignPlayers() {
+	public static TeamRcb createRcbTeam() {
 
 		Player player01 = Player.builder().setName("Faf Du Plessis").setCountry("South Africa").setRole("Batsman").setPriceincrores("7").build();
 		Player player02 = Player.builder().setName("Virat Kohli").setCountry("India").setRole("Batsman").setPriceincrores("15").build();
@@ -42,26 +40,8 @@ public class ValidateJsonBody {
 		listOfPlayers.add(player10);
 		listOfPlayers.add(player11);
 		
-		TeamRcb teamRcb = TeamRcb.builder().setName("Royal Challengers Bangalore").setLocation("Bangalore").setPlayer(listOfPlayers).build();
+		return TeamRcb.builder().setName("Royal Challengers Bangalore").setLocation("Bangalore").setPlayer(listOfPlayers).build();
 
-		List<Player> listOfPlayersToTest = teamRcb.getPlayer();
-		
-		int foreignPlayerCount = 0;
-		
-		for (Player player : listOfPlayersToTest) {
-			
-			if(!(player.getCountry().contains("India"))){
-			
-				foreignPlayerCount++;
-			}
-			
-		}
-		
-		assertThat(foreignPlayerCount).as("Number of Foreign Players").isEqualTo(4);
 	}
 	
-	@Test
-	public void validateTeamHasAtleastOneWicketKeeper() {
-		
-	}
 }
