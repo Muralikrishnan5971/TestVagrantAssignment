@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="TestVagrant Test Suite" duration-ms="294" started-at="2022-05-20T13:13:58Z" finished-at="2022-05-20T13:13:59Z">
+  <suite name="Default suite" duration-ms="332" started-at="2022-05-21T14:16:03Z" finished-at="2022-05-21T14:16:04Z">
     <groups>
     </groups>
-    <test name="TestVagrant Assignment" duration-ms="294" started-at="2022-05-20T13:13:58Z" finished-at="2022-05-20T13:13:59Z">
+    <test name="Default test" duration-ms="332" started-at="2022-05-21T14:16:03Z" finished-at="2022-05-21T14:16:04Z">
       <class name="com.testvagrants.tests.ValidateTeamRcbJson">
-        <test-method status="PASS" signature="validateTeamHasAtleastOneWicketKeeper()[pri:0, instance:com.testvagrants.tests.ValidateTeamRcbJson@2f7c7260]" name="validateTeamHasAtleastOneWicketKeeper" duration-ms="265" started-at="2022-05-20T18:43:58Z" finished-at="2022-05-20T18:43:59Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateTeamHasAtleastOneWicketKeeper -->
-        <test-method status="PASS" signature="validateTeamOnlyHasFourForeignPlayers()[pri:0, instance:com.testvagrants.tests.ValidateTeamRcbJson@2f7c7260]" name="validateTeamOnlyHasFourForeignPlayers" duration-ms="1" started-at="2022-05-20T18:43:59Z" finished-at="2022-05-20T18:43:59Z">
+        <test-method status="PASS" signature="validateTeamOnlyHasFourForeignPlayers()[pri:0, instance:com.testvagrants.tests.ValidateTeamRcbJson@2f7c7260]" name="validateTeamOnlyHasFourForeignPlayers" duration-ms="292" started-at="2022-05-21T19:46:03Z" description="This test is to validate team has only four foreign players" finished-at="2022-05-21T19:46:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateTeamOnlyHasFourForeignPlayers -->
+        <test-method status="PASS" signature="validateTeamHasAtleastOneWicketKeeper()[pri:1, instance:com.testvagrants.tests.ValidateTeamRcbJson@2f7c7260]" name="validateTeamHasAtleastOneWicketKeeper" duration-ms="7" started-at="2022-05-21T19:46:04Z" description="This test is to validate team has atleast one Wicket-keeper" finished-at="2022-05-21T19:46:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateTeamHasAtleastOneWicketKeeper -->
       </class> <!-- com.testvagrants.tests.ValidateTeamRcbJson -->
-    </test> <!-- TestVagrant Assignment -->
-  </suite> <!-- TestVagrant Test Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

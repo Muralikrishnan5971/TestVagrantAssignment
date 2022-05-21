@@ -1,0 +1,12 @@
+com\testvagrants\projectutils\JsonUtils.class
+com\testvagrants\factory\TeamFactory.class
+com\testvagrants\pojos\TeamRcb.class
+com\testvagrants\projectutils\PropertyReader.class
+com\testvagrants\projectutils\FakerUtils.class
+com\testvagrants\requestbuilderutils\RequestBuilder.class
+com\testvagrants\pojos\Player.class
+com\testvagrants\pojos\Player$PlayerBuilder.class
+com\testvagrants\pojos\TeamRcb$TeamRcbBuilder.class
+com\testvagrants\enums\ConfigProperty.class
+com\testvagrants\projectutils\TestDataUtil.class
+com\testvagrants\constants\FrameworkConstants.class

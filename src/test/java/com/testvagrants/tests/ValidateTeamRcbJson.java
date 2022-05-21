@@ -1,6 +1,6 @@
 package com.testvagrants.tests;
 
-import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.*;
 
 import java.util.List;
 
@@ -12,7 +12,9 @@ import com.testvagrants.pojos.TeamRcb;
 
 public class ValidateTeamRcbJson {
 
-	@Test
+	@Test(enabled = true, 
+			priority = 0,
+			description = "This test is to validate team has only four foreign players")
 	public void validateTeamOnlyHasFourForeignPlayers() {
 
 		TeamRcb teamRcb = TeamFactory.createRcbTeam();
@@ -33,7 +35,9 @@ public class ValidateTeamRcbJson {
 		assertThat(foreignPlayerCount).as("Number of Foreign Players").isEqualTo(4);
 	}
 
-	@Test
+	@Test(enabled = true, 
+			priority = 1,
+			description = "This test is to validate team has atleast one Wicket-keeper")
 	public void validateTeamHasAtleastOneWicketKeeper() {
 
 		TeamRcb teamRcb = TeamFactory.createRcbTeam();
@@ -51,6 +55,6 @@ public class ValidateTeamRcbJson {
 
 		}
 
-		assertThat(wicketKeeperCount).isGreaterThanOrEqualTo(1);
+		assertThat(wicketKeeperCount).as("Number of Wicket-Keepers").isGreaterThanOrEqualTo(1);
 	}
 }

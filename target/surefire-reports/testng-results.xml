@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="TestVagrant Test Suite" duration-ms="352" started-at="2022-05-21T11:12:33 IST" finished-at="2022-05-21T11:12:33 IST">
+    <groups>
+    </groups>
+    <test name="TestVagrant Assignment" duration-ms="352" started-at="2022-05-21T11:12:33 IST" finished-at="2022-05-21T11:12:33 IST">
+      <class name="com.testvagrants.tests.ValidateTeamRcbJson">
+        <test-method status="PASS" signature="validateTeamHasAtleastOneWicketKeeper()[pri:0, instance:com.testvagrants.tests.ValidateTeamRcbJson@63e2203c]" name="validateTeamHasAtleastOneWicketKeeper" duration-ms="239" started-at="2022-05-21T11:12:33 IST" finished-at="2022-05-21T11:12:33 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateTeamHasAtleastOneWicketKeeper -->
+        <test-method status="PASS" signature="validateTeamOnlyHasFourForeignPlayers()[pri:0, instance:com.testvagrants.tests.ValidateTeamRcbJson@63e2203c]" name="validateTeamOnlyHasFourForeignPlayers" duration-ms="1" started-at="2022-05-21T11:12:33 IST" finished-at="2022-05-21T11:12:33 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateTeamOnlyHasFourForeignPlayers -->
+      </class> <!-- com.testvagrants.tests.ValidateTeamRcbJson -->
+    </test> <!-- TestVagrant Assignment -->
+  </suite> <!-- TestVagrant Test Suite -->
+</testng-results>

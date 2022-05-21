@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [TestVagrant Test Suite]">
-  <test name="TestVagrant Assignment">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test verbose="2" name="Default test">
     <classes>
       <class name="com.testvagrants.tests.ValidateTeamRcbJson"/>
     </classes>
-  </test> <!-- TestVagrant Assignment -->
-</suite> <!-- Failed suite [TestVagrant Test Suite] -->
+  </test> <!-- Default test -->
+</suite> <!-- Failed suite [Default suite] -->
