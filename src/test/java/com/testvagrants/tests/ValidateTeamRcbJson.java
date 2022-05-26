@@ -12,9 +12,7 @@ import com.testvagrants.pojos.TeamRcb;
 
 public class ValidateTeamRcbJson {
 
-	@Test(enabled = true, 
-			priority = 0,
-			description = "This test is to validate team has only four foreign players")
+	@Test(enabled = true, priority = 0, description = "This test is to validate team has only four foreign players")
 	public void validateTeamOnlyHasFourForeignPlayers() {
 
 		TeamRcb teamRcb = TeamFactory.createRcbTeam();
@@ -25,7 +23,7 @@ public class ValidateTeamRcbJson {
 
 		for (Player player : listOfPlayers) {
 
-			if (!(player.getCountry().contains("India"))) {
+			if ((player.isForeign())) {
 
 				foreignPlayerCount++;
 			}
@@ -35,9 +33,7 @@ public class ValidateTeamRcbJson {
 		assertThat(foreignPlayerCount).as("Number of Foreign Players").isEqualTo(4);
 	}
 
-	@Test(enabled = true, 
-			priority = 1,
-			description = "This test is to validate team has atleast one Wicket-keeper")
+	@Test(enabled = true, priority = 1, description = "This test is to validate team has atleast one Wicket-keeper")
 	public void validateTeamHasAtleastOneWicketKeeper() {
 
 		TeamRcb teamRcb = TeamFactory.createRcbTeam();
@@ -48,7 +44,7 @@ public class ValidateTeamRcbJson {
 
 		for (Player player : listOfPlayersToTest) {
 
-			if ((player.getRole().contains("Wicket-keeper"))) {
+			if ((player.isWicketKeeper())) {
 
 				wicketKeeperCount++;
 			}
@@ -57,4 +53,5 @@ public class ValidateTeamRcbJson {
 
 		assertThat(wicketKeeperCount).as("Number of Wicket-Keepers").isGreaterThanOrEqualTo(1);
 	}
+
 }

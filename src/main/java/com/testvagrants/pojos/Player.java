@@ -11,4 +11,22 @@ public class Player {
 	private String country;
 	private String role;
 	private String priceincrores;
+
+	public boolean isForeign() {
+
+		if (!(country.equals("India")))
+			return true;
+		else
+			return false;
+
+	}
+
+	public boolean isWicketKeeper() {
+
+		if ((role.equals("Wicket-keeper")))
+			return true;
+		else
+			return false;
+	}
+
 }
