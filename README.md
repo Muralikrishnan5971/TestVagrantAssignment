@@ -13,7 +13,6 @@
   - Java Faker: External library used to generate test data
   - Jackson-Databind: used to convert JSON to and from POJO
   - Lombok: External Library used to reduce boilerplate code
-  - Docker: To run our automated tests as Docker images
 
 ## Approach used to construct Json Object
 - Used pojo classes to construct json object
